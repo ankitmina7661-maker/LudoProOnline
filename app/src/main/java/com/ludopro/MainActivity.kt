@@ -1,3 +1,4 @@
+
 package com.ludopro
 
 import android.os.Bundle
@@ -14,7 +15,6 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MaterialTheme {
-
                 var playerName by remember {
                     mutableStateOf("Player")
                 }
@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
                         onCodeChange = { roomCode = it },
                         onConnect = {
                             RoomManager.connect(
-                                ""https://ludoproonline.onrender.com""
+                                "https://ludoproonline.onrender.com"
                             )
                         },
                         onPublic = {
