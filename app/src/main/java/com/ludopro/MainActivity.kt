@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
                         onCodeChange = { roomCode = it },
                         onConnect = {
                             RoomManager.connect(
-                                "https://YOUR-SERVER.onrender.com"
+                                ""https://ludoproonline.onrender.com""
                             )
                         },
                         onPublic = {
